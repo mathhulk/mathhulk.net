@@ -1,0 +1,112 @@
+.section-hero {
+	height: 100vh;
+}
+
+.navbar-brand, .collapse-brand {
+	text-transform: none;
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: -1px;
+}
+
+.btn {
+	letter-spacing: 0;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
+.section-shaped .shape-style-1 :nth-child(1) {
+	top: calc(100vh - 10vw);
+	left: -5vw;
+	width: 20vw;
+	height: 20vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(2) {
+	left: 7vw;
+	top: calc(100vh - 5vw);
+	width: 15vw;
+	height: 15vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(3) {
+	width: 30vw;
+	height: 30vw;
+	left: 15vw;
+	top: calc(100vh - 12vw);
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(4) {
+	top: calc(100vh - 10vw);
+	left: 35vw;
+	width: 22vw;
+	height: 22vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(5) {
+	top: calc(100vh - 6vw);
+	left: 45vw;
+	width: 25vw;
+	height: 25vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(6) {
+	top: calc(100vh - 9vw);
+	left: 55vw;
+	width: 30vw;
+	height: 30vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(7) {
+	top: calc(100vh - 5vw);
+	left: 70vw;
+	width: 25vw;
+	height: 25vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1 :nth-child(8) {
+	top: calc(100vh - 9vw);
+	left: 88vw;
+	width: 22vw;
+	height: 22vw;
+	background: white;
+}
+
+.section-shaped .shape-style-1.shape-primary {
+	background: #8e2de2;
+	background: -webkit-linear-gradient(to top, #4a00e0, #8e2de2);
+	background: linear-gradient(to top, #4a00e0, #8e2de2);
+	overflow: hidden;
+}
+
+.navbar-transparent .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-transparent .navbar-brand, .navbar-transparent .navbar-nav .nav-link {
+	color: white;
+}
+
+.collapse-brand a, .collapse-brand a:hover, .collapse-brand a:focus {
+	color: #172b4d;
+}
+
+:focus, button:focus {
+	outline: none;
+}
+
+.btn-inner--icon i:not(.fa) {
+	top: 0;
+}
+
+.shadow {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.05) !important;
+}
