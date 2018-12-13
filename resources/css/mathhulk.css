@@ -1,3 +1,30 @@
+.card.shadow {
+	box-shadow: 0 8px 48px rgba(50, 50, 93, .035), 0 2px 24px rgba(0, 0, 0, .03) !important;
+}
+	
+.card.shadow:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 14px 112px rgba(50, 50, 93, .035), 0 6px 48px rgba(0, 0, 0, .03) !important;
+}
+
+.card {
+	margin-bottom: 5vh;
+}
+
+h6 {
+	font-weight: bold;
+}
+
+.section:not(.section-hero) h1 {
+	margin-bottom: 7vh;
+	font-weight: bold;
+	color: #32325d;
+}
+
+.section:not(.section-hero) h1:not(:first-child) {
+	margin-top: 10vh;
+}
+
 .section-hero {
 	height: 100vh;
 }
@@ -11,11 +38,6 @@
 
 .btn {
 	letter-spacing: 0;
-}
-
-.icon-shape i {
-	margin-top: 1px;
-	margin-left: 0.5px;
 }
 
 h1 {
@@ -110,8 +132,4 @@ h1 {
 
 .btn-inner--icon i:not(.fa) {
 	top: 0;
-}
-
-.shadow {
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.05) !important;
 }

@@ -10,10 +10,6 @@ $(document).ready(function( ) {
 				$(".parent .row").empty( );
 				
 				$.each(repositories, function(index, value) {
-					if(index % 3 === 0) {
-						$(".parent").append("<div class=\"row row-grid justify-content-center\"><!-- repositories --></div>");
-					}
-					
 					let repository = template;
 					
 					repository = repository.replace("{{ name }}", value.name.replace("-", " &bull; "));
@@ -29,7 +25,7 @@ $(document).ready(function( ) {
 					
 					repository = repository.replace("{{ html_url }}", value.html_url);
 					
-					$(".parent .row:last-child").append(repository);
+					$(".parent .row").append(repository);
 				});
 			});
 		}
