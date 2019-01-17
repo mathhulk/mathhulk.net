@@ -1,14 +1,12 @@
-.card.shadow {
-	box-shadow: 0 8px 48px rgba(50, 50, 93, .035), 0 2px 24px rgba(0, 0, 0, .03) !important;
-}
-	
-.card.shadow:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 14px 112px rgba(50, 50, 93, .035), 0 6px 48px rgba(0, 0, 0, .03) !important;
-}
-
 .card {
 	margin-bottom: 5vh;
+	border: 1px solid #e6eCf1 !important;
+	box-shadow: 0 6px 16px 0 rgba(116, 129, 141, 0.05) !important;
+}
+	
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px 0 rgba(116, 129, 141, 0.1) !important;
 }
 
 h6 {
