@@ -38,6 +38,10 @@ h6 {
 	letter-spacing: 0;
 }
 
+.btn, .card {
+	border-radius: 3px;
+}
+
 h1 {
 	color: white;
 	font-size: 50px;
