@@ -12,7 +12,7 @@ $(document).ready(function( ) {
 				$.each(repositories, function(index, value) {
 					let repository = template;
 					
-					repository = repository.replace("{{ name }}", value.name.replace("-", " &bull; "));
+					repository = repository.replace( "{{ name }}", value.name.replace("-", " &bull; ") );
 					repository = repository.replace("{{ description }}", value.description);
 					
 					let topics = value.topics;
@@ -21,8 +21,7 @@ $(document).ready(function( ) {
 						topics[index] = "<span class=\"badge badge-pill badge-primary\">" + value + "</span>";
 					});
 					
-					repository = repository.replace("{{ topics }}", topics.join(" "));
-					
+					repository = repository.replace( "{{ topics }}", topics.join(" ") );
 					repository = repository.replace("{{ html_url }}", value.html_url);
 					
 					$(".github .row").append(repository);
@@ -40,7 +39,7 @@ $(document).ready(function( ) {
 				$.each(repositories, function(index, value) {
 					let repository = template;
 					
-					repository = repository.replace("{{ name }}", value.name.replace("-", " &bull; "));
+					repository = repository.replace( "{{ name }}", value.name.replace("-", " &bull; ") );
 					repository = repository.replace("{{ description }}", value.description);
 					
 					let topics = value.tag_list;
@@ -49,8 +48,7 @@ $(document).ready(function( ) {
 						topics[index] = "<span class=\"badge badge-pill badge-primary\">" + value + "</span>";
 					});
 					
-					repository = repository.replace("{{ topics }}", topics.join(" "));
-					
+					repository = repository.replace( "{{ topics }}", topics.join(" ") );
 					repository = repository.replace("{{ html_url }}", value.web_url);
 					
 					$(".gitlab .row").append(repository);
