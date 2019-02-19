@@ -248,6 +248,10 @@ body {
 .content .card, .content img {
 	margin-bottom: 5vh;
 }
+
+.content {
+	margin-bottom: 10vh;
+}
 	
 .content .card:hover {
 	transform: translateY(-2px);
