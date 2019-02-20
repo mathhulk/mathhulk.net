@@ -40,7 +40,6 @@ body {
 
 .content h1 {
 	margin: 10vh 0 5vh;
-	color: #32325d;
 }
 
 .content h1:first-child {
@@ -266,12 +265,21 @@ body {
 	letter-spacing: 0;
 }
 
-.btn-wrapper {
-	padding: 15px;
-	background: rgba(255, 255, 255, 0.15);
-	display: inline-block;
+@media screen and (min-width: 768px) {
+	.btn-wrapper {
+		padding: 15px;
+		background: rgba(255, 255, 255, 0.15);
+		display: inline-block;
+		border-radius: 3px;
+	}
 }
 
-.btn, .card, .btn-wrapper {
+@media screen and (max-width: 768px) {
+	.land .header .btn-wrapper .btn {
+		margin-bottom: 12px;
+	}
+}
+
+.btn, .content .card {
 	border-radius: 3px;
 }
