@@ -1,285 +1,111 @@
-body {
-	overflow-x: hidden;
+.section-hero {
+	height: 100vh;
 }
 
-.land .header h1, .land .header p {
+.navbar-brand, .collapse-brand {
+	text-transform: none;
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: -1px;
+}
+
+.btn {
+	letter-spacing: 0;
+	border-radius: 3px;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+
+.section-shaped .shape-style-1 :nth-child(1) {
+	background: rgba(255, 255, 255, 0.15);
+	top: calc(100vh - 100px);
+	left: -5vw;
+	width: 20vw;
+	height: 20vw;
+}
+
+.section-shaped .shape-style-1 :nth-child(2) {
+	left: 8vw;
+	top: 25vh;
+	width: 5vw;
+	height: 5vw;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.section-shaped .shape-style-1 :nth-child(3) {
+	background: rgba(255, 255, 255, 0.2);
+	width: 9vw;
+	height: 9vw;
+	left: 10vw;
+	top: 37vh;
+}
+
+.section-shaped .shape-style-1 :nth-child(4) {
+	background: rgba(255, 255, 255, 0.2);
+	top: -14vw;
+	left: 25vw;
+	width: 20vw;
+	height: 20vw;
+}
+
+.section-shaped .shape-style-1 :nth-child(5) {
+	background: rgba(255, 255, 255, 0.15);
+	top: 50vh;
+	left: calc(100vw - 100px);
+	width: 20vw;
+	height: 20vw;
+}
+
+.section-shaped .shape-style-1 :nth-child(6) {
+	background: rgba(255, 255, 255, 0.1);
+	width: 9vw;
+	height: 9vw;
+	left: 80vw;
+	top: 32vh;
+}
+
+.section-shaped .shape-style-1 :nth-child(7) {
+	left: 75vw;
+	top: 50vh;
+	width: 5vw;
+	height: 5vw;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.section-shaped .shape-style-1.shape-primary {
+	background: #8e2de2;
+	background: -webkit-linear-gradient(to left, #4a00e0, #8e2de2);
+	background: linear-gradient(to left, #4a00e0, #8e2de2);
+	overflow: hidden;
+}
+
+.navbar-transparent .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-transparent .navbar-brand, .navbar-transparent .navbar-nav .nav-link {
 	color: white;
 }
 
-.land .header h1, .content h1 {
-	letter-spacing: -2px;
-	font-size: 50px;
-	font-weight: 900;
-	line-height: 50px;
-}
-
-.land .header h1 {
-	margin-bottom: 0;
-}
-
-.land .header p {
-	margin: 2vh 0 5vh;
-}
-
-.land .header p {
-	font-size: 20px;
-}
-
-.land {
-	background: #8e2de2;
-	background: -webkit-linear-gradient(to top, #4a00e0, #8e2de2);
-	background: linear-gradient(to top, #4a00e0, #8e2de2);
-	height: 75vh;
-	position: relative;
-}
-
-.content {
-	z-index: 25;
-	position: relative;
-}
-
-.content h1 {
-	margin: 10vh 0 5vh;
-}
-
-.content h1:first-child {
-	margin-top: 15vh;
-}
-
-.land .shapes .shape {
-	position: absolute;
-}
-
-.land .shapes .shape.cloud {
-	border-radius: 50%;
-}
-
-.land .shapes .shape.cloud:nth-child(-n+8) {
-	z-index: 5;
-}
-
-.land .shapes .shape.cloud:nth-child(-n+8), .land .shapes .shape.divide {
-	background: white;
-}
-
-.land .shapes .shape.cloud:nth-child(n+9) {
-	background: #e5f4fd;
-	z-index: 15;
-}
-
-.land .shapes .shape.cloud:nth-child(1) {
-	bottom: -5vw;
-	left: -5vw;
-	width: 17.5vw;
-	height: 17.5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(2) {
-	left: 7.5vw;
-	bottom: -7.5vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.cloud:nth-child(3) {
-	width: 10vw;
-	height: 10vw;
-	left: 17.5vw;
-	bottom: -5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(4) {
-	bottom: -3.5vw;
-	left: 26.5vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(5) {
-	bottom: -5vw;
-	right: -5vw;
-	width: 17.5vw;
-	height: 17.5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(6) {
-	right: 7.5vw;
-	bottom: -7.5vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.cloud:nth-child(7) {
-	width: 10vw;
-	height: 10vw;
-	right: 17.5vw;
-	bottom: -5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(8) {
-	bottom: -3.5vw;
-	right: 26.5vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(9) {
-	bottom: -10vw;
-	left: -5vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.cloud:nth-child(10) {
-	left: 7.5vw;
-	bottom: -12.5vw;
-	width: 12.5vw;
-	height: 12.5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(11) {
-	width: 8vw;
-	height: 8vw;
-	left: 17.5vw;
-	bottom: -10vw;
-}
-
-.land .shapes .shape.cloud:nth-child(12) {
-	bottom: -8.5vw;
-	left: 23.5vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(13) {
-	bottom: -3vw;
-	left: 8vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(14) {
-	bottom: -15vw;
-	left: 2vw;
-	width: 10vw;
-	height: 10vw;
-}
-
-.land .shapes .shape.cloud:nth-child(15) {
-	bottom: -18vw;
-	left: -8vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.cloud:nth-child(16) {
-	bottom: -10vw;
-	right: -5vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.cloud:nth-child(17) {
-	right: 7.5vw;
-	bottom: -12.5vw;
-	width: 12.5vw;
-	height: 12.5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(18) {
-	width: 8vw;
-	height: 8vw;
-	right: 17.5vw;
-	bottom: -10vw;
-}
-
-.land .shapes .shape.cloud:nth-child(19) {
-	bottom: -8.5vw;
-	right: 23.5vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(20) {
-	bottom: -3vw;
-	right: 8vw;
-	width: 5vw;
-	height: 5vw;
-}
-
-.land .shapes .shape.cloud:nth-child(21) {
-	bottom: -15vw;
-	right: 2vw;
-	width: 10vw;
-	height: 10vw;
-}
-
-.land .shapes .shape.cloud:nth-child(22) {
-	bottom: -18vw;
-	right: -8vw;
-	width: 15vw;
-	height: 15vw;
-}
-
-.land .shapes .shape.divide:nth-child(23) {
-	width: 100vw;
-	height: 20vw;
-	bottom: -25vw;
-	z-index: 20;
-}
-
-.land .header {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.collapse-brand a, .collapse-brand a:hover, .collapse-brand a:focus {
+	color: #172b4d;
 }
 
 :focus, button:focus {
 	outline: none;
 }
 
-.content .card {
-	border: 1px solid #e6eCf1 !important;
-	box-shadow: 0 6px 16px 0 rgba(116, 129, 141, 0.05) !important;
+.btn-inner--icon i:not(.fa) {
+	top: 0;
 }
 
-.content .card, .content img {
-	margin-bottom: 5vh;
+.navbar-toggler {
+	padding: 0;
+	border: none;
 }
 
-.content {
-	margin-bottom: 10vh;
-}
-	
-.content .card:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 16px 0 rgba(116, 129, 141, 0.1) !important;
-}
-
-.content .card .card-body h6 {
-	font-weight: bold;
-}
-
-.btn {
-	letter-spacing: 0;
-}
-
-@media screen and (min-width: 768px) {
-	.btn-wrapper {
-		padding: 15px;
-		background: rgba(255, 255, 255, 0.15);
-		display: inline-block;
-		border-radius: 3px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.land .header .btn-wrapper .btn {
-		margin-bottom: 12px;
-	}
-}
-
-.btn, .content .card {
-	border-radius: 3px;
+.navbar-brand {
+	padding: 0;
+	margin: 0;
 }
